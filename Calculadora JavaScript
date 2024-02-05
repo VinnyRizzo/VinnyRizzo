@@ -1,0 +1,31 @@
+function soma(num1, num2) {
+    return num1 + num2;
+}
+
+function subtrair(num1, num2) {
+    return num1 - num2;
+}
+
+function multiplicar(num1, num2) {
+    return num1 * num2;
+}
+
+function dividir(num1, num2) {
+    return num1 / num2;
+}
+
+let parametro1 = parseFloat(prompt('Insira o primeiro numero'));
+let parametro2 = parseFloat(prompt('Insira o segundo numero'));
+let operacao = prompt('Escolha a operacao (digite 1 para soma, 2 para subtracao, 3 para multiplicacao e 4 para divisao)');
+
+if (operacao === '1') {
+    alert(soma(parametro1, parametro2));
+} else if (operacao === '2') {
+    alert(subtrair(parametro1, parametro2));
+} else if (operacao === '3') {
+    alert(multiplicar(parametro1, parametro2));
+} else if (operacao === '4') {
+    alert(dividir(parametro1, parametro2));
+} else {
+    alert('Operacao digitada errada, tente novamente!');
+}
